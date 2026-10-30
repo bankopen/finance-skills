@@ -1,6 +1,6 @@
 ---
 name: gst-input-credit-check
-description: Compare your purchase register with GSTR-2B to find input tax credit at risk: invoices missing from GSTR-2B, amount or GSTIN mismatches, vendors not filing, invoices unpaid past 180 days, and time-limit risk. Use before filing GSTR-3B.
+description: Compare your purchase register with GSTR-2B to find input tax credit at risk. It finds invoices missing from GSTR-2B, amount or GSTIN mismatches, vendors not filing, invoices unpaid past 180 days and time-limit risk. Use before filing GSTR-3B.
 ---
 
 # GST input credit check

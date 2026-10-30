@@ -1,6 +1,6 @@
 ---
 name: journal-entry-review
-description: Screen a manual journal entry export with the tests an auditor typically runs: period-end clustering, round amounts, weekend and out-of-hours postings, unusual users, missing narration and Benford's law on amounts, and list the entries to look at first. Use before locking a period.
+description: Screen a manual journal entry export with the tests an auditor typically runs. The tests are period-end clustering, round amounts, weekend and out-of-hours postings, unusual users, missing narration and Benford's law on amounts. It lists the entries to look at first. Use before locking a period.
 ---
 
 # Journal entry review

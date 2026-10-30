@@ -19,6 +19,8 @@ for (const d of dirs) {
   if (!m) { fail(`${d}: needs frontmatter with name and description`); continue; }
   if (m[1] !== d) fail(`${d}: name "${m[1]}" does not match the folder`);
   if (m[2].length < 80 || m[2].length > 400) fail(`${d}: description is ${m[2].length} characters (want 80 to 400)`);
+  // The description is an unquoted YAML value: ": " or " #" inside it makes the frontmatter invalid and the skills CLI skips the skill.
+  if (/: | #/.test(m[2]) || /^[!&*\[\]{}|>'"%@`]/.test(m[2])) fail(`${d}: description is not valid as a plain YAML value (no ": " or " #", no leading special character)`);
   if (!/^# /m.test(text)) fail(`${d}: missing a title`);
   if (!text.includes("## Rules this skill always follows")) fail(`${d}: missing the shared safety rules`);
   if (!/Read-only/.test(text) || !/Verdict first/.test(text) || !/Supported/.test(text)) fail(`${d}: safety rules are incomplete`);
