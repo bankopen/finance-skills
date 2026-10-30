@@ -10,7 +10,7 @@ Skills that depend on Indian tax or compliance rules (GST input credit, TDS, MSM
 2. Every row names its source section (for example the CGST Act, the Income-tax Act, 2025 or the MSMED Act) and a last-checked date.
 3. Do not add a rule without its section reference and a date.
 
-## Current state (v0.2)
+## Current state (v0.3)
 | File | Status |
 |---|---|
 | `gst-input-credit-check/references/gst-itc-rules.md` | DRAFT |

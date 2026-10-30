@@ -2,7 +2,7 @@
 
 Free, open skills that make an AI agent work like a careful finance controller for Indian businesses. Each skill is a playbook: the steps, the checks and the output format, so you get the same disciplined result every run. They work with Claude, Claude Code, Cursor, Codex, GitHub Copilot, Gemini CLI and any agent that reads the Agent Skills format (a folder with a `SKILL.md`).
 
-> **Status: draft (v0.2).** The GST, TDS, MSME and statutory-date references are **not yet verified by a chartered accountant**, and only some skills have been dry-run on made-up data (see [docs/rule-references.md](docs/rule-references.md) and [docs/testing.md](docs/testing.md)). Each reference file says what is verified and what is not, and the skills say **Open** instead of quoting a rate they cannot support. Do not rely on them for filing or payment decisions without your own accountant's review.
+> **Status: draft (v0.3).** The GST, TDS, MSME and statutory-date references are **not yet verified by a chartered accountant**, and each skill has been dry-run only once on made-up data (see [docs/rule-references.md](docs/rule-references.md) and [docs/testing.md](docs/testing.md)). Each reference file says what is verified and what is not, and the skills say **Open** instead of quoting a rate they cannot support. Do not rely on them for filing or payment decisions without your own accountant's review.
 
 ## Install
 
