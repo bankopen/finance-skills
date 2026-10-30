@@ -38,7 +38,7 @@ Verdict first: "6 vendors checked: 2 clear, 3 with a failed check, 1 with questi
 
 Then **Needs a lookup** (checks that need an outside source: GST portal status, bank confirmation, asking the vendor) and **Open** (checks that could not run for lack of data). They differ: a lookup is something you do; an Open is something the data did not allow.
 
-Example row: `Charlie Traders Pvt Ltd | GSTIN vs PAN | Fail | GSTIN 07AAACX4321D1Z9 contains PAN AAACX4321D but PAN given is AAACC4321D | Supported`
+Example row: `Charlie Traders Pvt Ltd | GSTIN vs PAN | Fail | GSTIN 07ABCDE1234F1Z5 contains PAN ABCDE1234F but PAN given is ABCDE1234G | Supported`
 
 ## Checks it runs on its own output
 Every failure quotes the exact field value and the rule it broke. It never writes that a vendor is genuine or active.
