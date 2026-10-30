@@ -2,7 +2,7 @@
 
 Free, open skills that make an AI agent work like a careful finance controller for Indian businesses. Each skill is a playbook: the steps, the checks and the output format, so you get the same disciplined result every run. They work with Claude, Claude Code, Cursor, Codex, GitHub Copilot, Gemini CLI and any agent that reads the Agent Skills format (a folder with a `SKILL.md`).
 
-> **Status: draft (v0.3).** The GST, TDS, MSME and statutory-date references are **not yet verified by a chartered accountant**, and each skill has been dry-run only once on made-up data (see [docs/rule-references.md](docs/rule-references.md) and [docs/testing.md](docs/testing.md)). Each reference file says what is verified and what is not, and the skills say **Open** instead of quoting a rate they cannot support. Do not rely on them for filing or payment decisions without your own accountant's review.
+> **Status: draft (v0.4).** The GST, TDS, MSME and statutory-date references are **not yet verified by a chartered accountant**, and each skill has been dry-run only once on made-up data (see [docs/rule-references.md](docs/rule-references.md) and [docs/testing.md](docs/testing.md)). Each reference file says what is verified and what is not, and the skills say **Open** instead of quoting a rate they cannot support. Do not rely on them for filing or payment decisions without your own accountant's review.
 
 ## Install
 
@@ -16,7 +16,7 @@ Or by hand: copy a skill folder (for example `msme-payment-watch/`) into your ag
 
 Run **`finance-context`** once. It asks about your entities, banks, ERP and approval limits, then writes one `finance-context.md` that the other skills read first, so they do not ask you again.
 
-## Skills in this release (22)
+## Skills in this release (33)
 
 **Foundation**
 
@@ -53,6 +53,11 @@ Run **`finance-context`** once. It asks about your entities, banks, ERP and appr
 | [`daily-close-status`](daily-close-status/SKILL.md) | A fixed-format one-page status for close week |
 | [`flux-analysis-explainer`](flux-analysis-explainer/SKILL.md) | Variance memos with every explanation labelled Supported, Hypothesis or Open |
 | [`journal-entry-review`](journal-entry-review/SKILL.md) | Screens manual journals for round amounts, odd timing, self-approval and missing narration |
+| [`accruals-prepaids`](accruals-prepaids/SKILL.md) | Drafts accrual and prepaid entries from POs, contracts and unbilled work, with the basis for each |
+| [`intercompany-reconciliation`](intercompany-reconciliation/SKILL.md) | Matches balances across two entities and shows the differences by cause |
+| [`fixed-asset-check`](fixed-asset-check/SKILL.md) | Checks additions, capitalisation, depreciation and disposals, and ties the register to the ledger |
+| [`cutoff-check`](cutoff-check/SKILL.md) | Finds sales, purchases and services booked in the wrong period around month end |
+| [`audit-trail-pack`](audit-trail-pack/SKILL.md) | Matches an auditor's request list to your documents and lists the gaps |
 
 **Expense management**
 
@@ -62,12 +67,18 @@ Run **`finance-context`** once. It asks about your entities, banks, ERP and appr
 | [`card-reconciliation`](card-reconciliation/SKILL.md) | Matches card statements to claims and finds unclaimed spend |
 | [`travel-per-diem-audit`](travel-per-diem-audit/SKILL.md) | Checks travel claims against city and grade limits |
 | [`duplicate-claim-finder`](duplicate-claim-finder/SKILL.md) | Finds the same receipt claimed twice, or by two people |
+| [`receipt-claim-review`](receipt-claim-review/SKILL.md) | Matches receipts to claim lines and flags amount, date, merchant and tax-invoice mismatches |
+| [`expense-gst-capture`](expense-gst-capture/SKILL.md) | Checks claims for the tax-invoice details needed for GST credit |
+| [`reimbursement-batch-prep`](reimbursement-batch-prep/SKILL.md) | Prepares a draft payout from approved claims and checks bank details and limits; never pays |
+| [`budget-burn-alert`](budget-burn-alert/SKILL.md) | Shows spend against budget, projects the year end and flags lines burning ahead of plan |
+| [`expense-policy-drafter`](expense-policy-drafter/SKILL.md) | Drafts a travel and expense policy and leaves every limit as a decision for you |
 
 **Cash and controls**
 
 | Skill | What it does |
 |---|---|
 | [`13-week-cash-forecast`](13-week-cash-forecast/SKILL.md) | A direct-method cash forecast from AR, AP, payroll and statutory dates, with stress cases |
+| [`daily-cash-position`](daily-cash-position/SKILL.md) | A one-page morning view of cash across all accounts with the change since yesterday |
 | [`finance-controls-health-check`](finance-controls-health-check/SKILL.md) | A scored review of payables, close and expense controls with ranked fixes |
 
 More are planned: see [docs/roadmap.md](docs/roadmap.md).

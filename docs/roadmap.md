@@ -1,11 +1,7 @@
 # Roadmap
 
-Planned skills, in rough order. None of these exist yet; names may change.
+All the skills planned for the first release are now written. Next:
 
-**Continuous close:** accruals-prepaids, intercompany-reconciliation, fixed-asset-check, cutoff-check, audit-trail-pack
-**Expense management:** receipt-claim-review, expense-gst-capture, reimbursement-batch-prep, budget-burn-alert, expense-policy-drafter
-**Cash and treasury:** daily-cash-position
-
-Also planned: verification of every rule reference by a chartered accountant, and a dry-run test on made-up data for every skill.
-
-Suggestions are welcome as issues.
+- **Verification** of every rule reference by a chartered accountant (see [rule references](rule-references.md)).
+- **More testing:** each skill has been dry-run once on a made-up dataset; we want more runs on varied data, and real-world edge cases from users.
+- **New skills** from suggestions. Open an issue with the job you do every month and the exports you have.
